@@ -1,4 +1,5 @@
 body {
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
   background-color: #FFEFE7;
@@ -23,6 +24,40 @@ nav .icons {
 nav .icons button {
   background: none;
   border-style: none;
+}
+
+article {
+  width: auto;
+  padding-left: 45px;
+  padding-right: 45px;
+  color: #7C6A0A;
+  display: flex;
+  justify-content: space-between;
+}
+article .impact-section {
+  display: flex;
+  flex-direction: column;
+  padding-top: 50px;
+  gap: 25px;
+}
+article h1 {
+  font-size: 3em;
+}
+article p {
+  font-size: 1.5em;
+}
+article button {
+  width: 12vw;
+  padding: 20px;
+  background-color: #FA9500;
+  border-style: none;
+  border-radius: 35px;
+  color: white;
+  font-size: 1em;
+}
+article img {
+  width: 25vw;
+  border-radius: 19px;
 }
 
 footer {
