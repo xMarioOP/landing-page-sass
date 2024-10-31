@@ -1,5 +1,9 @@
-body {
+* {
+  font-size: 62.5%;
   box-sizing: border-box;
+}
+
+body {
   margin: 0;
   padding: 0;
   background-color: #FFEFE7;
@@ -16,12 +20,11 @@ nav {
   color: #7C6A0A;
 }
 nav p {
-  font-size: 1.5em;
-  padding-left: 30px;
+  font-size: 2rem;
+  padding-left: 10px;
 }
 nav .icons {
   display: flex;
-  gap: 15px;
 }
 nav .icons button {
   background: none;
@@ -32,40 +35,48 @@ article {
   width: auto;
   padding-left: 45px;
   padding-right: 45px;
-  padding-top: 70px;
   color: #7C6A0A;
   display: flex;
-  flex-direction: row;
+  flex-direction: column-reverse;
   justify-content: space-between;
   align-items: center;
 }
 article .impact-section {
   display: flex;
   flex-direction: column;
-  padding-top: 50px;
-  gap: 25px;
 }
 article h1 {
-  font-size: 3em;
+  font-size: 2.8rem;
+  font-weight: 600;
+  line-height: 3.64rem;
 }
 article p {
-  font-size: 1.5em;
+  font-size: 1.2rem;
+  font-weight: 400;
+  line-height: 1.56rem;
 }
 article button {
   background: none;
   border-style: none;
 }
 article button {
-  width: 12vw;
-  padding: 20px;
+  margin: 0 auto;
+  width: 50%;
+  min-width: 150.12px;
+  max-width: 261px;
+  height: auto;
+  min-height: 41.99px;
+  max-height: 73px;
+  border-radius: 20.13px;
+  font-size: 1.323rem;
+  font-weight: 700;
+  line-height: 1.719rem;
   background-color: #FA9500;
-  border-radius: 35px;
   color: white;
-  font-size: 1em;
 }
 article img {
-  width: 25vw;
-  border-radius: 19px;
+  width: 80vw;
+  border-radius: 7.2px;
 }
 
 section {
@@ -94,6 +105,9 @@ section .healthcare .card-section, section .furniture .card-section {
   flex-direction: row;
   justify-content: space-evenly;
   align-items: center;
+  overflow-x: scroll;
+  overscroll-behavior-x: contain;
+  scroll-snap-type: x proximity;
 }
 section .healthcare .product-card, section .furniture .product-card {
   width: 14vw;
@@ -101,6 +115,7 @@ section .healthcare .product-card, section .furniture .product-card {
   color: #7C6A0A;
   padding: 20px;
   border-radius: 8px;
+  scroll-snap-align: center;
 }
 section .healthcare .product-card .icon, section .furniture .product-card .icon {
   width: 100%;
@@ -156,7 +171,7 @@ section .furniture .product-card {
 }
 .about-us .mission-section .earth p, .about-us .mission-section .innovation p {
   text-align: center;
-  font-size: 1.5em;
+  font-size: 2.4rem;
 }
 .gallery h2 {
   font-weight: bold;
@@ -189,7 +204,7 @@ section .furniture .product-card {
 }
 .location h3,
 .location p {
-  font-size: 1.5em;
+  font-size: 2.4rem;
 }
 .location .map {
   display: flex;
