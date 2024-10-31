@@ -54,6 +54,7 @@ article p {
   font-size: 1.2rem;
   font-weight: 400;
   line-height: 1.56rem;
+  margin-bottom: 18px;
 }
 article button {
   background: none;
@@ -82,7 +83,7 @@ article img {
 section {
   width: auto;
   height: auto;
-  padding: 60px;
+  padding: 5px 40px;
 }
 section h2 {
   color: #7C6A0A;
@@ -101,8 +102,8 @@ section .healthcare h2, section .furniture h2 {
 section .healthcare .card-section, section .furniture .card-section {
   width: auto;
   height: auto;
-  -moz-column-gap: 200px;
-       column-gap: 200px;
+  -moz-column-gap: 30px;
+       column-gap: 30px;
   row-gap: 80px;
   display: flex;
   flex-direction: row;
@@ -215,7 +216,6 @@ section .furniture .product-card {
   height: 398px;
   -o-object-fit: cover;
      object-fit: cover;
-  gap: 20px;
   border-radius: 16px;
 }
 .gallery .gallery-images img:hover {
@@ -231,9 +231,15 @@ section .furniture .product-card {
   line-height: 2.86rem;
   padding: 36px 0;
 }
-.location h3,
+.location h3 {
+  font-size: 2rem;
+  font-weight: 400;
+  line-height: 2.6rem;
+}
 .location p {
-  font-size: 2.4rem;
+  font-size: 1.5rem;
+  font-weight: 400;
+  line-height: 1.95rem;
 }
 .location .map {
   display: flex;
@@ -255,13 +261,26 @@ footer {
   width: 100%;
   height: auto;
   color: white;
-  padding: 40px;
+  padding: 20px;
+}
+footer h3 {
+  font-size: 2.1rem;
+  font-weight: 500;
+  line-height: 2.73rem;
+}
+footer p {
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 1.82rem;
 }
 footer .social-media {
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  gap: 40px;
-  padding-bottom: 40px;
+  gap: 20px;
+}
+footer .social-media img {
+  width: 28px;
+  height: 28px;
 }/*# sourceMappingURL=main.css.map */
