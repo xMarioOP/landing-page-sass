@@ -86,13 +86,16 @@ section {
 }
 section h2 {
   color: #7C6A0A;
-  font-size: 2em;
+  font-size: 2.2rem;
 }
 section .healthcare, section .furniture {
   padding-bottom: 60px;
 }
 section .healthcare h2, section .furniture h2 {
-  font-weight: 300;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 2.2rem;
+  line-height: 2.682rem;
   padding-bottom: 60px;
 }
 section .healthcare .card-section, section .furniture .card-section {
@@ -110,12 +113,18 @@ section .healthcare .card-section, section .furniture .card-section {
   scroll-snap-type: x proximity;
 }
 section .healthcare .product-card, section .furniture .product-card {
-  width: 14vw;
+  width: 100%;
+  min-width: 178px;
+  max-width: 324px;
+  height: auto;
+  min-height: 275.79;
+  max-height: 502px;
+  border-radius: 4.4px;
+  box-shadow: 0px 0.55px 5.49px 0px rgba(0, 0, 0, 0.1019607843);
+  scroll-snap-align: center;
   background-color: #FFDAC6;
   color: #7C6A0A;
   padding: 20px;
-  border-radius: 8px;
-  scroll-snap-align: center;
 }
 section .healthcare .product-card .icon, section .furniture .product-card .icon {
   width: 100%;
@@ -135,11 +144,23 @@ section .healthcare .product-card .product-image, section .furniture .product-ca
   align-items: center;
 }
 section .healthcare .product-card .product-image img, section .furniture .product-card .product-image img {
-  width: 12vw;
-  height: 30vh;
+  width: 100%;
+  height: auto;
   -o-object-fit: cover;
      object-fit: cover;
   border-radius: 6px;
+}
+section .healthcare .product-card h3, section .furniture .product-card h3 {
+  font-size: 1.373rem;
+  font-weight: 600;
+  line-height: 1.785rem;
+  text-align: left;
+}
+section .healthcare .product-card p, section .furniture .product-card p {
+  font-size: 0.824rem;
+  font-weight: 400;
+  line-height: 1.071rem;
+  text-align: left;
 }
 section .furniture .product-card {
   background-color: #BABD8D;

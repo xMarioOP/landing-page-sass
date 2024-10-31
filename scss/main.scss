@@ -114,14 +114,17 @@ section {
 
     h2 {
         color: $primary-text-color;
-        font-size: 2em;
+        font-size: 2.2rem;
     }
 
     .healthcare {
         padding-bottom: 60px;
 
         h2 {
-            font-weight: 300;
+            font-family: "Montserrat", sans-serif;
+            font-weight: 500;
+            font-size: 2.2rem;
+            line-height: 2.682rem;
             padding-bottom: 60px;
         }
 
@@ -137,13 +140,21 @@ section {
         }
 
         .product-card {
-            width: 14vw;
-            // height: 45vh;
+            width: 100%;
+            min-width: 178px;
+            max-width: 324px;
+            height: auto;
+            min-height: 275.79;
+            max-height: 502px;
+            border-radius: 4.4px;
+            box-shadow: 0px 0.55px 5.49px 0px #0000001A;
+            scroll-snap-align: center;
+
             background-color: $secondary-color;
             color: $primary-text-color;
+
             padding: 20px;
-            border-radius: 8px;
-            scroll-snap-align: center;
+            // border-radius: 8px;
 
             .icon {
                 width: 100%;
@@ -155,6 +166,8 @@ section {
                     width: 28px;
                     height: 28px;
                 }
+
+
             }
 
             .product-image {
@@ -165,11 +178,25 @@ section {
                 align-items: center;
 
                 img {
-                    width: 12vw;
-                    height: 30vh;
+                    width: 100%;
+                    height: auto;
                     object-fit: cover;
                     border-radius: 6px;
                 }
+            }
+
+            h3 {
+                font-size: 1.373rem;
+                font-weight: 600;
+                line-height: 1.785rem;
+                text-align: left
+            }
+
+            p {
+                font-size: 0.824rem;
+                font-weight: 400;
+                line-height: 1.071rem;
+                text-align: left;
             }
         }
 
