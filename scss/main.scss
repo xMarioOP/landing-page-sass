@@ -168,6 +168,61 @@ section {
 
 
 
+.about-us {
+    padding-bottom: 60px;
+
+    h2 {
+        font-weight: bold;
+        padding-bottom: 60px;
+    }
+
+    .mission-section {
+        @include flexCenter(row, space-evenly, center);
+
+        .earth {
+            width: 30vw;
+            display: flex;
+            gap: 40px;
+            color: #E86424;
+
+            img {
+                object-fit: cover;
+            }
+
+            p {
+                text-align: center;
+                font-size: $paragraph-size;
+            }
+        }
+    }
+
+    .innovation {
+        @extend .earth;
+    }
+}
+
+.gallery {
+    h2 {
+        font-weight: bold;
+        padding-bottom: 60px;
+    }
+
+    .gallery-images {
+        @include flexCenter(row, space-between, center);
+
+        img {
+            width: 28vw;
+            height: 45vh;
+            object-fit: cover;
+            object-position: 5px 35%;
+            border-radius: 16px;
+
+            &:hover {
+                transform: scale(1.1);
+            }
+        }
+    }
+}
 
 footer {
     $background: $quaternary-color;
