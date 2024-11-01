@@ -6,6 +6,27 @@ $primary-text-color: #7C6A0A;
 $font-stack: "IBM Plex Sans", sans-serif;
 $paragraph-size: 2.4rem;
 
+///responsive
+$breakpoint-tablet: 600px;
+$breakpoint-desktop: 1250px;
+$breakpoint-desktop-max: $breakpoint-desktop - 1px; // Define un nuevo valor aquí
+
+@mixin respond-to($breakpoint) {
+    @if $breakpoint ==tablet {
+        @media (min-width: $breakpoint-tablet) and (max-width: $breakpoint-desktop-max) {
+            @content;
+        }
+    }
+
+    @else if $breakpoint ==desktop {
+        @media (min-width: $breakpoint-desktop) {
+            @content;
+        }
+    }
+}
+
+
+///responsive
 
 @mixin flexCenter($direction, $content, $align) {
     display: flex;
@@ -59,6 +80,14 @@ article {
     color: $primary-text-color;
     @include flexCenter(column-reverse, space-between, center);
 
+    @include respond-to(tablet) {
+        flex-direction: row;
+    }
+
+    @include respond-to(desktop) {
+        flex-direction: row;
+    }
+
     .impact-section {
         display: flex;
         flex-direction: column;
@@ -70,13 +99,43 @@ article {
         font-size: 2.8rem;
         font-weight: 600;
         line-height: 3.64rem;
+
+        @include respond-to(desktop) {
+            font-size: 6rem;
+            font-weight: 600;
+            line-height: 7.8rem;
+            margin-bottom: 61px;
+        }
+
+        @include respond-to(tablet) {
+            font-size: 4rem;
+            font-weight: 600;
+            line-height: 5.8rem;
+        }
     }
 
     p {
         font-size: 1.2rem;
         font-weight: 400;
         line-height: 1.56rem;
-        margin-bottom: 18px
+        margin-bottom: 18px;
+
+        @include respond-to(desktop) {
+            font-size: 2.5rem;
+            font-weight: 400;
+            line-height: 3.25rem;
+            margin-bottom: 108px;
+            max-width: 592px;
+        }
+
+        @include respond-to(tablet) {
+            font-size: 2rem;
+            font-weight: 400;
+            line-height: 2.8rem;
+            margin-bottom: 90px;
+            max-width: 280px;
+        }
+
     }
 
     @include buttonStyle;
@@ -98,11 +157,40 @@ article {
         line-height: 1.719rem;
         background-color: $quaternary-color;
         color: white;
+        margin-bottom: 50px;
+
+        @include respond-to(desktop) {
+            margin: 0;
+            width: 261px;
+            height: 73px;
+            border-radius: 35px;
+
+            font-size: 2.3rem;
+            font-weight: 700;
+            line-height: 2.989rem;
+        }
+
+        @include respond-to(tablet) {
+            margin: 0 0 50px 0;
+        }
     }
 
     img {
         width: 80vw;
+        height: 362px;
         border-radius: 7.2px;
+
+        @include respond-to(desktop) {
+            width: 50vw;
+            height: auto;
+            max-width: 550px;
+            max-height: 686px;
+        }
+
+        @include respond-to(tablet) {
+            width: 39vw;
+        }
+
     }
 
 }
@@ -126,7 +214,7 @@ section {
             font-weight: 500;
             font-size: 2.2rem;
             line-height: 2.682rem;
-            padding-bottom: 60px;
+            padding-bottom: 20px;
         }
 
         .card-section {
@@ -134,7 +222,7 @@ section {
             height: auto;
             column-gap: 30px;
             row-gap: 80px;
-            @include flexCenter(row, space-evenly, center);
+            @include flexCenter(row, space-evenly, normal);
             overflow-x: scroll;
             overscroll-behavior-x: contain;
             scroll-snap-type: x proximity;

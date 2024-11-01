@@ -41,6 +41,16 @@ article {
   justify-content: space-between;
   align-items: center;
 }
+@media (min-width: 600px) and (max-width: 1249px) {
+  article {
+    flex-direction: row;
+  }
+}
+@media (min-width: 1250px) {
+  article {
+    flex-direction: row;
+  }
+}
 article .impact-section {
   display: flex;
   flex-direction: column;
@@ -50,11 +60,44 @@ article h1 {
   font-weight: 600;
   line-height: 3.64rem;
 }
+@media (min-width: 1250px) {
+  article h1 {
+    font-size: 6rem;
+    font-weight: 600;
+    line-height: 7.8rem;
+    margin-bottom: 61px;
+  }
+}
+@media (min-width: 600px) and (max-width: 1249px) {
+  article h1 {
+    font-size: 4rem;
+    font-weight: 600;
+    line-height: 5.8rem;
+  }
+}
 article p {
   font-size: 1.2rem;
   font-weight: 400;
   line-height: 1.56rem;
   margin-bottom: 18px;
+}
+@media (min-width: 1250px) {
+  article p {
+    font-size: 2.5rem;
+    font-weight: 400;
+    line-height: 3.25rem;
+    margin-bottom: 108px;
+    max-width: 592px;
+  }
+}
+@media (min-width: 600px) and (max-width: 1249px) {
+  article p {
+    font-size: 2rem;
+    font-weight: 400;
+    line-height: 2.8rem;
+    margin-bottom: 90px;
+    max-width: 280px;
+  }
 }
 article button {
   background: none;
@@ -74,10 +117,41 @@ article button {
   line-height: 1.719rem;
   background-color: #FA9500;
   color: white;
+  margin-bottom: 50px;
+}
+@media (min-width: 1250px) {
+  article button {
+    margin: 0;
+    width: 261px;
+    height: 73px;
+    border-radius: 35px;
+    font-size: 2.3rem;
+    font-weight: 700;
+    line-height: 2.989rem;
+  }
+}
+@media (min-width: 600px) and (max-width: 1249px) {
+  article button {
+    margin: 0 0 50px 0;
+  }
 }
 article img {
   width: 80vw;
+  height: 362px;
   border-radius: 7.2px;
+}
+@media (min-width: 1250px) {
+  article img {
+    width: 50vw;
+    height: auto;
+    max-width: 550px;
+    max-height: 686px;
+  }
+}
+@media (min-width: 600px) and (max-width: 1249px) {
+  article img {
+    width: 39vw;
+  }
 }
 
 section {
@@ -97,7 +171,7 @@ section .healthcare h2, section .furniture h2 {
   font-weight: 500;
   font-size: 2.2rem;
   line-height: 2.682rem;
-  padding-bottom: 60px;
+  padding-bottom: 20px;
 }
 section .healthcare .card-section, section .furniture .card-section {
   width: auto;
@@ -108,7 +182,7 @@ section .healthcare .card-section, section .furniture .card-section {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
-  align-items: center;
+  align-items: normal;
   overflow-x: scroll;
   overscroll-behavior-x: contain;
   scroll-snap-type: x proximity;
