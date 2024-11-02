@@ -23,12 +23,38 @@ nav p {
   font-size: 2rem;
   padding-left: 10px;
 }
+@media (min-width: 600px) and (max-width: 1249px) {
+  nav p {
+    font-size: 2.5rem;
+    font-weight: 400;
+    line-height: 3rem;
+  }
+}
+@media (min-width: 1250px) {
+  nav p {
+    font-size: 3rem;
+    font-weight: 400;
+    line-height: 3.9rem;
+  }
+}
 nav .icons {
   display: flex;
 }
 nav .icons button {
   background: none;
   border-style: none;
+}
+@media (min-width: 600px) and (max-width: 1249px) {
+  nav .icons svg {
+    width: 40px;
+    height: 40px;
+  }
+}
+@media (min-width: 1250px) {
+  nav .icons svg {
+    width: 30px;
+    height: 30px;
+  }
 }
 
 article {
@@ -173,6 +199,24 @@ section .healthcare h2, section .furniture h2 {
   line-height: 2.682rem;
   padding-bottom: 20px;
 }
+@media (min-width: 600px) and (max-width: 1249px) {
+  section .healthcare h2, section .furniture h2 {
+    font-size: 3.5rem;
+    font-weight: 400;
+    line-height: 6.5rem;
+    text-align: left;
+  }
+}
+@media (min-width: 1250px) {
+  section .healthcare h2, section .furniture h2 {
+    font-family: IBM Plex Sans;
+    font-size: 5rem;
+    font-weight: 400;
+    line-height: 6.5rem;
+    text-align: left;
+    margin-top: 100px;
+  }
+}
 section .healthcare .card-section, section .furniture .card-section {
   width: auto;
   height: auto;
@@ -247,11 +291,31 @@ section .furniture .product-card {
   font-weight: bold;
   padding-bottom: 60px;
 }
+@media (min-width: 600px) and (max-width: 1249px) {
+  .about-us h2 {
+    font-size: 3.5rem;
+    font-weight: 500;
+    line-height: 4.5rem;
+  }
+}
+@media (min-width: 1250px) {
+  .about-us h2 {
+    font-size: 5rem;
+    font-weight: 500;
+    line-height: 6.5rem;
+  }
+}
 .about-us .mission-section {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+@media (min-width: 1250px) {
+  .about-us .mission-section {
+    flex-direction: row;
+    justify-content: space-around;
+  }
 }
 .about-us .mission-section .earth, .about-us .mission-section .innovation {
   display: flex;
@@ -263,6 +327,11 @@ section .furniture .product-card {
   color: #E86424;
   margin-bottom: 57px;
 }
+@media (min-width: 1250px) {
+  .about-us .mission-section .earth, .about-us .mission-section .innovation {
+    flex-direction: row;
+  }
+}
 .about-us .mission-section .earth img, .about-us .mission-section .innovation img {
   -o-object-fit: cover;
      object-fit: cover;
@@ -273,11 +342,43 @@ section .furniture .product-card {
   font-size: 1.351rem;
   line-height: 1.756rem;
 }
+@media (min-width: 600px) and (max-width: 1249px) {
+  .about-us .mission-section .earth p, .about-us .mission-section .innovation p {
+    font-size: 2rem;
+    text-align: center;
+    font-weight: 500;
+    line-height: 2.5rem;
+  }
+}
+@media (min-width: 1250px) {
+  .about-us .mission-section .earth p, .about-us .mission-section .innovation p {
+    font-size: 2.3rem;
+    text-align: center;
+    font-weight: 500;
+    line-height: 2.9rem;
+  }
+}
 .gallery h2 {
   font-size: 2.2rem;
   font-weight: 500;
   line-height: 2.86rem;
   padding-bottom: 42px;
+}
+@media (min-width: 600px) and (max-width: 1249px) {
+  .gallery h2 {
+    font-size: 3.5rem;
+    font-weight: 500;
+    line-height: 5.5rem;
+    text-align: left;
+  }
+}
+@media (min-width: 1250px) {
+  .gallery h2 {
+    font-size: 5rem;
+    font-weight: 500;
+    line-height: 6.5rem;
+    text-align: left;
+  }
 }
 .gallery .gallery-images {
   display: flex;
@@ -285,6 +386,11 @@ section .furniture .product-card {
   justify-content: center;
   align-items: center;
   gap: 64px;
+}
+@media (min-width: 1250px) {
+  .gallery .gallery-images {
+    flex-direction: row;
+  }
 }
 .gallery .gallery-images img {
   width: 100%;
@@ -296,6 +402,12 @@ section .furniture .product-card {
 .gallery .gallery-images img:hover {
   transform: scale(1.1);
 }
+@media (min-width: 600px) and (max-width: 1249px) {
+  .gallery .gallery-images img {
+    width: 396px;
+    height: 398px;
+  }
+}
 
 .location {
   color: #E86424;
@@ -306,15 +418,63 @@ section .furniture .product-card {
   line-height: 2.86rem;
   padding: 36px 0;
 }
+@media (min-width: 600px) and (max-width: 1249px) {
+  .location h2 {
+    font-size: 3.5rem;
+    font-weight: 500;
+    line-height: 5.5rem;
+    text-align: left;
+  }
+}
+@media (min-width: 1250px) {
+  .location h2 {
+    font-size: 5rem;
+    font-weight: 500;
+    line-height: 6.5rem;
+    text-align: left;
+  }
+}
 .location h3 {
   font-size: 2rem;
   font-weight: 400;
   line-height: 2.6rem;
 }
+@media (min-width: 600px) and (max-width: 1249px) {
+  .location h3 {
+    font-size: 2rem;
+    font-weight: 400;
+    line-height: 3.5rem;
+    text-align: left;
+  }
+}
+@media (min-width: 1250px) {
+  .location h3 {
+    font-size: 3.5rem;
+    font-weight: 400;
+    line-height: 4.55rem;
+    text-align: left;
+  }
+}
 .location p {
   font-size: 1.5rem;
   font-weight: 400;
   line-height: 1.95rem;
+}
+@media (min-width: 600px) and (max-width: 1249px) {
+  .location p {
+    font-size: 1.5rem;
+    font-weight: 400;
+    line-height: 2.5rem;
+    text-align: left;
+  }
+}
+@media (min-width: 1250px) {
+  .location p {
+    font-size: 2.5rem;
+    font-weight: 400;
+    line-height: 3.2rem;
+    text-align: left;
+  }
 }
 .location .map {
   display: flex;
@@ -330,6 +490,18 @@ section .furniture .product-card {
      object-fit: cover;
   border-radius: 3.85px;
 }
+@media (min-width: 600px) and (max-width: 1249px) {
+  .location .map img {
+    width: 100%;
+    height: 596px;
+  }
+}
+@media (min-width: 1250px) {
+  .location .map img {
+    width: 100%;
+    height: 596px;
+  }
+}
 
 footer {
   background-color: #FA9500;
@@ -343,10 +515,38 @@ footer h3 {
   font-weight: 500;
   line-height: 2.73rem;
 }
+@media (min-width: 600px) and (max-width: 1249px) {
+  footer h3 {
+    font-size: 2rem;
+    font-weight: 500;
+    line-height: 3rem;
+  }
+}
+@media (min-width: 1250px) {
+  footer h3 {
+    font-size: 3rem;
+    font-weight: 500;
+    line-height: 3.9rem;
+  }
+}
 footer p {
   font-size: 1.4rem;
   font-weight: 400;
   line-height: 1.82rem;
+}
+@media (min-width: 600px) and (max-width: 1249px) {
+  footer p {
+    font-size: 1.5rem;
+    font-weight: 500;
+    line-height: 2rem;
+  }
+}
+@media (min-width: 1250px) {
+  footer p {
+    font-size: 2rem;
+    font-weight: 500;
+    line-height: 2.6rem;
+  }
 }
 footer .social-media {
   display: flex;
@@ -358,4 +558,16 @@ footer .social-media {
 footer .social-media img {
   width: 28px;
   height: 28px;
+}
+@media (min-width: 600px) and (max-width: 1249px) {
+  footer .social-media img {
+    width: 39px;
+    height: 39px;
+  }
+}
+@media (min-width: 1250px) {
+  footer .social-media img {
+    width: 44px;
+    height: 44px;
+  }
 }/*# sourceMappingURL=main.css.map */
