@@ -1,4 +1,4 @@
-# Course: Fundamentals of Sass - Create Your First Landing Page 🌟
+# Landing Page (With Sass) 🌟
 
 Welcome to my project showcasing the knowledge I gained from the **Fundamentals of Sass** course! In this course, I learned how to use Sass to enhance my CSS skills and build beautiful, maintainable stylesheets for web applications.
 
