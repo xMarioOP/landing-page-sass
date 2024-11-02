@@ -1,0 +1,612 @@
+* {
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #FFEFE7;
+  font-family: "IBM Plex Sans", sans-serif;
+}
+
+nav {
+  width: auto;
+  padding: 15px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  color: #7C6A0A;
+}
+nav p {
+  font-size: 2rem;
+  padding-left: 10px;
+}
+@media (min-width: 600px) and (max-width: 1249px) {
+  nav p {
+    font-size: 2.5rem;
+    font-weight: 400;
+    line-height: 3rem;
+  }
+}
+@media (min-width: 1250px) {
+  nav p {
+    font-size: 3rem;
+    font-weight: 400;
+    line-height: 3.9rem;
+  }
+}
+nav .icons {
+  display: flex;
+}
+nav .icons button {
+  background: none;
+  border-style: none;
+}
+@media (min-width: 600px) and (max-width: 1249px) {
+  nav .icons svg {
+    width: 40px;
+    height: 40px;
+  }
+}
+@media (min-width: 1250px) {
+  nav .icons svg {
+    width: 30px;
+    height: 30px;
+  }
+}
+
+article {
+  width: auto;
+  padding-left: 45px;
+  padding-right: 45px;
+  color: #7C6A0A;
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: space-between;
+  align-items: center;
+}
+@media (min-width: 600px) and (max-width: 1249px) {
+  article {
+    flex-direction: row;
+  }
+}
+@media (min-width: 1250px) {
+  article {
+    flex-direction: row;
+  }
+}
+article .impact-section {
+  display: flex;
+  flex-direction: column;
+}
+article h1 {
+  font-size: 2.8rem;
+  font-weight: 600;
+  line-height: 3.64rem;
+}
+@media (min-width: 1250px) {
+  article h1 {
+    font-size: 6rem;
+    font-weight: 600;
+    line-height: 7.8rem;
+    margin-bottom: 61px;
+  }
+}
+@media (min-width: 600px) and (max-width: 1249px) {
+  article h1 {
+    font-size: 4rem;
+    font-weight: 600;
+    line-height: 5.8rem;
+  }
+}
+article p {
+  font-size: 1.2rem;
+  font-weight: 400;
+  line-height: 1.56rem;
+  margin-bottom: 18px;
+}
+@media (min-width: 1250px) {
+  article p {
+    font-size: 2.5rem;
+    font-weight: 400;
+    line-height: 3.25rem;
+    margin-bottom: 108px;
+    max-width: 592px;
+  }
+}
+@media (min-width: 600px) and (max-width: 1249px) {
+  article p {
+    font-size: 2rem;
+    font-weight: 400;
+    line-height: 2.8rem;
+    margin-bottom: 90px;
+    max-width: 280px;
+  }
+}
+article button {
+  background: none;
+  border-style: none;
+}
+article button {
+  margin: 0 auto;
+  width: 50%;
+  min-width: 150.12px;
+  max-width: 261px;
+  height: auto;
+  min-height: 41.99px;
+  max-height: 73px;
+  border-radius: 20.13px;
+  font-size: 1.323rem;
+  font-weight: 700;
+  line-height: 1.719rem;
+  background-color: #FA9500;
+  color: white;
+  margin-bottom: 50px;
+}
+@media (min-width: 1250px) {
+  article button {
+    margin: 0;
+    width: 261px;
+    height: 73px;
+    border-radius: 35px;
+    font-size: 2.3rem;
+    font-weight: 700;
+    line-height: 2.989rem;
+  }
+}
+@media (min-width: 600px) and (max-width: 1249px) {
+  article button {
+    margin: 0 0 50px 0;
+  }
+}
+article img {
+  width: 80vw;
+  height: 362px;
+  border-radius: 7.2px;
+}
+@media (min-width: 1250px) {
+  article img {
+    width: 50vw;
+    height: auto;
+    max-width: 550px;
+    max-height: 686px;
+  }
+}
+@media (min-width: 600px) and (max-width: 1249px) {
+  article img {
+    width: 39vw;
+  }
+}
+
+section {
+  width: auto;
+  height: auto;
+  padding: 5px 40px;
+}
+section h2 {
+  color: #7C6A0A;
+  font-size: 2.2rem;
+}
+section .healthcare, section .furniture {
+  padding-bottom: 60px;
+}
+section .healthcare h2, section .furniture h2 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 2.2rem;
+  line-height: 2.682rem;
+  padding-bottom: 20px;
+}
+@media (min-width: 600px) and (max-width: 1249px) {
+  section .healthcare h2, section .furniture h2 {
+    font-size: 3.5rem;
+    font-weight: 400;
+    line-height: 6.5rem;
+    text-align: left;
+  }
+}
+@media (min-width: 1250px) {
+  section .healthcare h2, section .furniture h2 {
+    font-family: IBM Plex Sans;
+    font-size: 5rem;
+    font-weight: 400;
+    line-height: 6.5rem;
+    text-align: left;
+    margin-top: 100px;
+  }
+}
+section .healthcare .card-section, section .furniture .card-section {
+  width: auto;
+  height: auto;
+  -moz-column-gap: 30px;
+       column-gap: 30px;
+  row-gap: 80px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: normal;
+  overflow-x: scroll;
+  overscroll-behavior-x: contain;
+  scroll-snap-type: x proximity;
+}
+section .healthcare .product-card, section .furniture .product-card {
+  width: 100%;
+  min-width: 178px;
+  max-width: 324px;
+  height: auto;
+  min-height: 275.79;
+  max-height: 502px;
+  border-radius: 4.4px;
+  box-shadow: 0px 0.55px 5.49px 0px rgba(0, 0, 0, 0.1019607843);
+  scroll-snap-align: center;
+  background-color: #FFDAC6;
+  color: #7C6A0A;
+  padding: 20px;
+}
+@media (min-width: 600px) and (max-width: 1249px) {
+  section .healthcare .product-card, section .furniture .product-card {
+    display: flex;
+    flex-direction: column;
+  }
+}
+@media (min-width: 1250px) {
+  section .healthcare .product-card, section .furniture .product-card {
+    display: flex;
+    flex-direction: column;
+  }
+}
+section .healthcare .product-card .icon, section .furniture .product-card .icon {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  padding-bottom: 12px;
+}
+section .healthcare .product-card .icon svg, section .furniture .product-card .icon svg {
+  width: 28px;
+  height: 28px;
+}
+section .healthcare .product-card .product-image, section .furniture .product-card .product-image {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+section .healthcare .product-card .product-image img, section .furniture .product-card .product-image img {
+  width: 100%;
+  height: 215px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 6px;
+}
+section .healthcare .product-card h3, section .furniture .product-card h3 {
+  font-size: 1.373rem;
+  font-weight: 600;
+  line-height: 1.785rem;
+  text-align: left;
+}
+@media (min-width: 600px) and (max-width: 1249px) {
+  section .healthcare .product-card h3, section .furniture .product-card h3 {
+    font-size: 1.8rem;
+    font-weight: 400;
+    line-height: 2.5rem;
+  }
+}
+@media (min-width: 1250px) {
+  section .healthcare .product-card h3, section .furniture .product-card h3 {
+    font-size: 2.5rem;
+    font-weight: 600;
+    line-height: 3.25rem;
+  }
+}
+section .healthcare .product-card p, section .furniture .product-card p {
+  font-size: 0.824rem;
+  font-weight: 400;
+  line-height: 1.071rem;
+  text-align: left;
+}
+@media (min-width: 600px) and (max-width: 1249px) {
+  section .healthcare .product-card p, section .furniture .product-card p {
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1rem;
+  }
+}
+@media (min-width: 1250px) {
+  section .healthcare .product-card p, section .furniture .product-card p {
+    font-size: 1.5rem;
+    font-weight: 400;
+    line-height: 1.95rem;
+  }
+}
+section .furniture .product-card {
+  background-color: #BABD8D;
+  color: white;
+}
+
+.about-us h2 {
+  font-weight: bold;
+  padding-bottom: 60px;
+}
+@media (min-width: 600px) and (max-width: 1249px) {
+  .about-us h2 {
+    font-size: 3.5rem;
+    font-weight: 500;
+    line-height: 4.5rem;
+  }
+}
+@media (min-width: 1250px) {
+  .about-us h2 {
+    font-size: 5rem;
+    font-weight: 500;
+    line-height: 6.5rem;
+  }
+}
+.about-us .mission-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+@media (min-width: 1250px) {
+  .about-us .mission-section {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+}
+.about-us .mission-section .earth, .about-us .mission-section .innovation {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 30vw;
+  gap: 10px;
+  color: #E86424;
+  margin-bottom: 57px;
+}
+@media (min-width: 1250px) {
+  .about-us .mission-section .earth, .about-us .mission-section .innovation {
+    flex-direction: row;
+  }
+}
+.about-us .mission-section .earth img, .about-us .mission-section .innovation img {
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.about-us .mission-section .earth p, .about-us .mission-section .innovation p {
+  text-align: center;
+  font-weight: 500;
+  font-size: 1.351rem;
+  line-height: 1.756rem;
+}
+@media (min-width: 600px) and (max-width: 1249px) {
+  .about-us .mission-section .earth p, .about-us .mission-section .innovation p {
+    font-size: 2rem;
+    text-align: center;
+    font-weight: 500;
+    line-height: 2.5rem;
+  }
+}
+@media (min-width: 1250px) {
+  .about-us .mission-section .earth p, .about-us .mission-section .innovation p {
+    font-size: 2.3rem;
+    text-align: center;
+    font-weight: 500;
+    line-height: 2.9rem;
+  }
+}
+.gallery h2 {
+  font-size: 2.2rem;
+  font-weight: 500;
+  line-height: 2.86rem;
+  padding-bottom: 42px;
+}
+@media (min-width: 600px) and (max-width: 1249px) {
+  .gallery h2 {
+    font-size: 3.5rem;
+    font-weight: 500;
+    line-height: 5.5rem;
+    text-align: left;
+  }
+}
+@media (min-width: 1250px) {
+  .gallery h2 {
+    font-size: 5rem;
+    font-weight: 500;
+    line-height: 6.5rem;
+    text-align: left;
+  }
+}
+.gallery .gallery-images {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 64px;
+}
+@media (min-width: 1250px) {
+  .gallery .gallery-images {
+    flex-direction: row;
+  }
+}
+.gallery .gallery-images img {
+  width: 100%;
+  height: 398px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 16px;
+}
+.gallery .gallery-images img:hover {
+  transform: scale(1.1);
+}
+@media (min-width: 600px) and (max-width: 1249px) {
+  .gallery .gallery-images img {
+    width: 396px;
+    height: 398px;
+  }
+}
+
+.location {
+  color: #E86424;
+}
+.location h2 {
+  font-weight: 500;
+  font-size: 2.2rem;
+  line-height: 2.86rem;
+  padding: 36px 0;
+}
+@media (min-width: 600px) and (max-width: 1249px) {
+  .location h2 {
+    font-size: 3.5rem;
+    font-weight: 500;
+    line-height: 5.5rem;
+    text-align: left;
+  }
+}
+@media (min-width: 1250px) {
+  .location h2 {
+    font-size: 5rem;
+    font-weight: 500;
+    line-height: 6.5rem;
+    text-align: left;
+  }
+}
+.location h3 {
+  font-size: 2rem;
+  font-weight: 400;
+  line-height: 2.6rem;
+}
+@media (min-width: 600px) and (max-width: 1249px) {
+  .location h3 {
+    font-size: 2rem;
+    font-weight: 400;
+    line-height: 3.5rem;
+    text-align: left;
+  }
+}
+@media (min-width: 1250px) {
+  .location h3 {
+    font-size: 3.5rem;
+    font-weight: 400;
+    line-height: 4.55rem;
+    text-align: left;
+  }
+}
+.location p {
+  font-size: 1.5rem;
+  font-weight: 400;
+  line-height: 1.95rem;
+}
+@media (min-width: 600px) and (max-width: 1249px) {
+  .location p {
+    font-size: 1.5rem;
+    font-weight: 400;
+    line-height: 2.5rem;
+    text-align: left;
+  }
+}
+@media (min-width: 1250px) {
+  .location p {
+    font-size: 2.5rem;
+    font-weight: 400;
+    line-height: 3.2rem;
+    text-align: left;
+  }
+}
+.location .map {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 50px;
+}
+.location .map img {
+  width: 330px;
+  height: 480px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 3.85px;
+}
+@media (min-width: 600px) and (max-width: 1249px) {
+  .location .map img {
+    width: 100%;
+    height: 596px;
+  }
+}
+@media (min-width: 1250px) {
+  .location .map img {
+    width: 100%;
+    height: 596px;
+  }
+}
+
+footer {
+  background-color: #FA9500;
+  width: 100%;
+  height: auto;
+  color: white;
+  padding: 20px;
+}
+footer h3 {
+  font-size: 2.1rem;
+  font-weight: 500;
+  line-height: 2.73rem;
+}
+@media (min-width: 600px) and (max-width: 1249px) {
+  footer h3 {
+    font-size: 2rem;
+    font-weight: 500;
+    line-height: 3rem;
+  }
+}
+@media (min-width: 1250px) {
+  footer h3 {
+    font-size: 3rem;
+    font-weight: 500;
+    line-height: 3.9rem;
+  }
+}
+footer p {
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 1.82rem;
+}
+@media (min-width: 600px) and (max-width: 1249px) {
+  footer p {
+    font-size: 1.5rem;
+    font-weight: 500;
+    line-height: 2rem;
+  }
+}
+@media (min-width: 1250px) {
+  footer p {
+    font-size: 2rem;
+    font-weight: 500;
+    line-height: 2.6rem;
+  }
+}
+footer .social-media {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+footer .social-media img {
+  width: 28px;
+  height: 28px;
+}
+@media (min-width: 600px) and (max-width: 1249px) {
+  footer .social-media img {
+    width: 39px;
+    height: 39px;
+  }
+}
+@media (min-width: 1250px) {
+  footer .social-media img {
+    width: 45px;
+    height: 45px;
+  }
+}/*# sourceMappingURL=main.css.map */
