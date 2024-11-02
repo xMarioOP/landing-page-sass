@@ -1,3 +1,4 @@
+//variables
 $primary-color: #FFEFE7;
 $secondary-color: #FFDAC6;
 $tertiary-color: #BABD8D;
@@ -607,8 +608,8 @@ footer {
             }
 
             @include respond-to(desktop) {
-                width: 44px;
-                height: 44px;
+                width: 45px;
+                height: 45px;
             }
         }
     }
