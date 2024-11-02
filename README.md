@@ -2,6 +2,16 @@
 
 Welcome to my project showcasing the knowledge I gained from the **Fundamentals of Sass** course! In this course, I learned how to use Sass to enhance my CSS skills and build beautiful, maintainable stylesheets for web applications.
 
+## 🌐 Live Demo
+
+Experience my landing page created with Sass! Click the link below to see it in action:
+
+[🚀 Live Demo Here!](https://xMarioOP.github.io/landing-page-sass/)
+
+Feel free to explore the design and functionality I implemented!
+
+--- 
+
 ## Course Overview 📝
 
 In this course, I explored:
@@ -11,6 +21,8 @@ In this course, I explored:
 - **Sass Syntax:** How to structure stylesheets, use variables, and leverage nesting.
 - **Mixins & Functions:** Creating reusable code to streamline my styles.
 - **Flexbox Layouts:** Building responsive sections for a stunning landing page.
+
+--- 
 
 ## Project: Eco-store 🏪
 
@@ -27,6 +39,8 @@ With Sass, I was able to create a visually appealing and organized landing page 
 - Proficient use of Sass for styling web applications.
 - Ability to create structured and organized code with clear variables and mixins.
 - Experience in deploying projects using GitHub Pages.
+
+---
 
 ## Thank You! 🙏
 
